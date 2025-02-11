@@ -1,0 +1,72 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Keith Fenske">
+   <meta name="GENERATOR" content="Mozilla/4.8 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>John Conway's Game of Life - by: Keith Fenske</title>
+</head>
+<body background="ffcccc.gif">
+<center><applet code="Life3.class" archive="life3b.jar" width="95%" height="90%">
+<p><b><font size=+1>Sorry, your browser does not support Java.</font></b></applet></center>
+<p>This web page is a Java applet to play John Conway's Game of Life.&nbsp;
+For reference, see articles in "Scientific American" (October 1970 and
+February 1971) and "Time" magazine (21 January 1974).
+<p>Life is not your average two-player game.&nbsp; You and the computer
+work together, with you making decisions, and the computer doing calculations.&nbsp;
+You define a board pattern and then watch as the computer projects future
+generations of this pattern.&nbsp; Even with some of the most trivial initial
+patterns, you can obtain results that are both beautiful and intriguing.
+<p>Cells (squares) on a rectangular grid are either empty or full (occupied).&nbsp;
+The next generation is calculated by counting the number of occupied neighbors,
+up to a maximum of eight.&nbsp; Fewer than two neighbors, or more than
+three, results in death: the cell will be empty in the next generation.&nbsp;
+No change is made if there are exactly two neighbors.&nbsp; Exactly three
+neighbors results in a birth: the cell will be occupied.&nbsp; This updating
+is "instantaneous" and does not change squares before everybody's fate
+has been determined.
+<p>Click the mouse to change a cell.&nbsp; If the cell is currently empty,
+then it will be filled.&nbsp; If the cell is currently full, then it will
+be emptied.
+<p>Try the 8-generation Cheshire cat pattern ("." are empty; "O" are full):
+<blockquote>
+<pre>. . . . . . . . . .
+. . . . . . . . . .
+. . . O . . O . . .
+. . . O O O O . . .
+. . O . . . . O . .
+. . O . O O . O . .
+. . O . . . . O . .
+. . . O O O O . . .
+. . . . . . . . . .
+. . . . . . . . . .</pre>
+</blockquote>
+Cells are shown in color.&nbsp; A cell with the background color is empty,
+and has been empty for a while.&nbsp; A blue cell is a death: newly empty.&nbsp;
+A green cell is a birth: newly occupied.&nbsp; A white cell has been occupied
+for a while.
+<p><hr>
+<p><a NAME="java"></a>If this web page begins with an error message saying
+that your browser does not support Java, then either your computer doesn't
+have Java, or Java is not enabled.&nbsp; If you see an empty rectangle
+where the applet should be, then you have Java but need a newer browser
+or a newer version of Java.&nbsp; For Internet Explorer 5 or later, Firefox,
+Mozilla, and Netscape 7.x or later on Windows, you may download the Sun
+Java run-time environment (JRE) from <a href="http://www.java.com/getjava/">http://www.java.com/getjava/</a>
+on Sun's web site.&nbsp; This program was written on and tested against
+Sun Java 1.4.
+<p>The <a href="life3c.txt">source code</a> for this applet is available,
+even though writing a similar Java program is an assignment for students,
+and I'm sure that some students won't do their own homework.&nbsp; (Hint:
+put an empty border around your internal game board, to avoid having special
+cases when counting the number of neighbors.)&nbsp; You may also <a href="life3d.zip">download
+the application</a> as a <a href="freesoft.htm#zip">ZIP archive</a> with
+the executable Java class files and the documentation in <a href="freesoft.htm#acrobat">Adobe
+Acrobat</a> PDF format.&nbsp; More programming assignments and solutions
+can be found on my "<a href="cpindex.htm">Computer Programming Examples</a>"
+web page.
+<p>Copyright (c) 2004 by Keith Fenske.&nbsp; Released under the GNU General
+Public License (GPL).
+<p><hr>
+</body>
+</html>
